@@ -1,5 +1,9 @@
 # Gene Set Enrichment Analysis (GSEA)
 
+**Analysis and R code:** Parvaneh Nikpour, Smedler Lab  
+**Analysis date:** January 2025
+
+
 This folder contains the R code and input files used to perform Gene Set Enrichment Analysis (GSEA) for the melanopsin HeLa cell analysis.
 
 ## Analysis
