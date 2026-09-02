@@ -50,7 +50,7 @@ A fixed random seed (`set.seed(42)`) is used for reproducibility.
 
 ## Gene sets
 
-Human Hallmark gene sets from the Molecular Signatures Database (MSigDB) were used:
+Human Hallmark gene sets (H collection: hallmark gene sets) from the Molecular Signatures Database (MSigDB) were used:
 
 `h.all.v2024.1.Hs.symbols.gmt`
 
