@@ -26,8 +26,8 @@ the same workflow.
 ## Files
 
 * `GSEA_Melanopsin.R` – R script used to perform GSEA and generate enrichment plots.
-* `5th_DESeq2_dds_1h_diff.xlsx` – DESeq2 differential expression results used as input for the 1 h analysis.
-* `5th_DESeq2_dds_12h_diff.xlsx` – DESeq2 differential expression results used as input for the 12 h analysis.
+* `DESeq2_dds_1h_diff.xlsx` – DESeq2 differential expression results used as input for the 1 h analysis.
+* `DESeq2_dds_12h_diff.xlsx` – DESeq2 differential expression results used as input for the 12 h analysis.
 * `h.all.v2024.1.Hs.symbols.gmt` – MSigDB Human Hallmark gene sets (gene symbols), version 2024.1.Hs, accessed 10 January 2025.
 
 ## Running the analysis
@@ -35,13 +35,13 @@ the same workflow.
 The R script demonstrates the analysis using the 1 h DESeq2 dataset:
 
 ```r
-deseq_results_1 <- read_excel("5th_DESeq2_dds_1h_diff.xlsx")
+deseq_results_1 <- read_excel("DESeq2_dds_1h_diff.xlsx")
 ```
 
 To perform the corresponding 12 h analysis, replace the 1 h input file with:
 
 ```r
-deseq_results_1 <- read_excel("5th_DESeq2_dds_12h_diff.xlsx")
+deseq_results_1 <- read_excel("DESeq2_dds_12h_diff.xlsx")
 ```
 
 The remaining analysis workflow is the same for both time points.
