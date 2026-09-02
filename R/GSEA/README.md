@@ -1,18 +1,27 @@
 # Gene Set Enrichment Analysis (GSEA)
 
-**Analysis and R code:** Parvaneh Nikpour, Smedler Lab  
-**Analysis date:** January 2025
+**Analysis and R code:** [Parvaneh Nikpour](https://github.com/parvanehnikpour), Smedler Lab
 
+This folder contains the R code and input files used for Gene Set Enrichment
+Analysis (GSEA) in the study:
 
-This folder contains the R code and input files used to perform Gene Set Enrichment Analysis (GSEA) for the melanopsin HeLa cell analysis.
+**Nikpour P, Varas-Godoy M, Uhlén P, Smedler E.  
+Decoding calcium oscillation frequency in transcriptional regulation.  
+bioRxiv (2025).**
+
+https://doi.org/10.1101/2025.10.10.676024
 
 ## Analysis
 
-GSEA was performed using the `fgsea` R package. Differential expression results generated using DESeq2 were used as input for the analysis.
+GSEA was performed using the `fgsea` R package. Differential expression
+results generated using DESeq2 were used as input for the analysis.
 
-Genes were ranked from highest to lowest according to their log2 fold change (`log2FoldChange`). Gene Set Enrichment Analysis was then performed using the MSigDB Human Hallmark gene sets.
+Genes were ranked from highest to lowest according to their log2 fold change
+(`log2FoldChange`). GSEA was performed using the MSigDB Human Hallmark
+gene sets.
 
-The analysis was performed separately for the 1 h and 12 h datasets using the same workflow.
+The analysis was performed separately for the 1 h and 12 h datasets using
+the same workflow.
 
 ## Files
 
