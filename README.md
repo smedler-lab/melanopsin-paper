@@ -78,4 +78,4 @@ melanopsin-paper/
 │
 └── README.md
 ```
-
+**Analysis and R code:** [Parvaneh Nikpour](https://github.com/parvanehnikpour), Smedler Lab
