@@ -30,16 +30,31 @@ The analysis can then be replicated by running:
 
 ## R code
 
-The `R` directory contains R code and supporting input files for analyses performed in the study.
+The `R` directory contains R code and supporting input files for the RNA-seq, proteomics, and phosphoproteomics analyses performed in the study.
 
 The analyses are organized into separate subdirectories. Each subdirectory contains the corresponding R script, input files where applicable, and a README describing the analysis and how to run it.
 
 Currently included analyses:
 
-* `R/GSEA` – Gene Set Enrichment Analysis (GSEA) using DESeq2 results and MSigDB Human Hallmark gene sets.
-* `R/Proteomics_Missing_Value_Imputation` – missing-value imputation of normalized proteomics data using the `missForest` R package.
+### RNA-seq
 
-Additional R analyses associated with the study may be provided in separate subdirectories.
+* `R/RNAseq_PCA` – Principal Component Analysis (PCA) of normalized RNA-seq count data.
+* `R/RNAseq_DESeq2` – differential expression analysis of RNA-seq data using DESeq2.
+* `R/GSEA` – Gene Set Enrichment Analysis (GSEA) using DESeq2 results and MSigDB Human Hallmark gene sets.
+
+### Proteomics
+
+* `R/Proteomics_Missing_Value_Imputation` – missing-value imputation of normalized proteomics data using the `missForest` R package.
+* `R/Proteomics_PCA` – Principal Component Analysis (PCA) of the imputed proteomics data.
+* `R/Proteomics_limma_DE` – differential expression analysis of proteomics data using `limma`.
+
+### Phosphoproteomics
+
+* `R/Phosphoproteomics_Missing_Value_Imputation` – missing-value imputation of normalized phosphoproteomics data.
+* `R/Phosphoproteomics_PCA` – Principal Component Analysis (PCA) of the imputed phosphoproteomics data.
+* `R/Phosphoproteomics_limma_DE` – differential expression analysis of phosphoproteomics data using `limma`.
+
+For analysis-specific information, including input files, analysis parameters, and outputs, please refer to the README within each analysis directory.
 
 ## Repository structure
 
@@ -49,10 +64,18 @@ melanopsin-paper/
 │   └── Python code for calcium signal analysis
 │
 ├── R/
+│   ├── RNAseq_PCA/
+│   ├── RNAseq_DESeq2/
 │   ├── GSEA/
-│   └── Proteomics_Missing_Value_Imputation/
+│   │
+│   ├── Proteomics_Missing_Value_Imputation/
+│   ├── Proteomics_PCA/
+│   ├── Proteomics_limma_DE/
+│   │
+│   ├── Phosphoproteomics_Missing_Value_Imputation/
+│   ├── Phosphoproteomics_PCA/
+│   └── Phosphoproteomics_limma_DE/
 │
 └── README.md
 ```
 
-For analysis-specific details, required input files, and output descriptions, please refer to the README within each analysis directory.
